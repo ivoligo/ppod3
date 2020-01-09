@@ -1,7 +1,7 @@
 package servlets;
 
 import service.IUserService;
-import service.UserService;
+import service.impl.UserService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -13,9 +13,8 @@ import java.io.IOException;
 
 @WebServlet("/delete")
 public class DeleteServlet extends HttpServlet {
-//    IUserService userService = UserServiceHibernate.getInstance();
-//    IUserService userService = UserServiceJdbc.getInstance();
-IUserService userService = UserService.getInstance();
+    IUserService userService = UserService.getInstance();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("views/delete.jsp");

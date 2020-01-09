@@ -2,7 +2,7 @@ package servlets;
 
 import model.User;
 import service.IUserService;
-import service.UserService;
+import service.impl.UserService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -17,7 +17,6 @@ import java.io.PrintWriter;
 public class AddServlet extends HttpServlet {
 
     IUserService userService = UserService.getInstance();
-//    IUserService userService = UserServiceJdbc.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

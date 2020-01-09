@@ -2,7 +2,7 @@ package servlets;
 
 import model.User;
 import service.IUserService;
-import service.UserService;
+import service.impl.UserService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -20,8 +20,9 @@ IUserService userService = UserService.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<User> users = null;
+
         try {
+            List<User> users = null;
             users = userService.getAllUser();
             req.setAttribute("users", users);
         } catch (Exception e) {

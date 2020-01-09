@@ -2,7 +2,7 @@ package servlets;
 
 import model.User;
 import service.IUserService;
-import service.UserService;
+import service.impl.UserService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -15,9 +15,8 @@ import java.io.PrintWriter;
 
 @WebServlet("/edit")
 public class EditServlet extends HttpServlet {
-//    IUserService userService = UserServiceHibernate.getInstance();
-//    IUserService userService = UserServiceJdbc.getInstance();
-IUserService userService = UserService.getInstance();
+
+    IUserService userService = UserService.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -26,13 +25,12 @@ IUserService userService = UserService.getInstance();
         User user = null;
         try {
             user = userService.findUserById(id);
-
-        req.setAttribute("userId", id);
-        req.setAttribute("userLogin", user.getLogin());
-        req.setAttribute("userAge", user.getAge());
-        req.setAttribute("userCity", user.getCity());
-        req.setAttribute("userPassword", user.getPassword());
-        req.setAttribute("user", user);
+            req.setAttribute("userId", id);
+            req.setAttribute("userLogin", user.getLogin());
+            req.setAttribute("userAge", user.getAge());
+            req.setAttribute("userCity", user.getCity());
+            req.setAttribute("userPassword", user.getPassword());
+            req.setAttribute("user", user);
         } catch (Exception e) {
             e.printStackTrace();
         }

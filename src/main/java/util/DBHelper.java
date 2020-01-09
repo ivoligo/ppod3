@@ -15,15 +15,27 @@ public class DBHelper {
 
     private DBHelper(){
     }
-        private static class DBHolder{
+
+
         private final static DBHelper instance = new DBHelper();
-    }
+
     public static DBHelper getInstance() {
-        return DBHolder.instance;
+        return instance;
     }
 
+
+
+    public SessionFactory createSessionFactory() {
+        Configuration configuration = getMySqlConfiguration();
+        StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder();
+        builder.applySettings(configuration.getProperties());
+        ServiceRegistry serviceRegistry = builder.build();
+        return configuration.buildSessionFactory(serviceRegistry);
+    }
+
+
     @SuppressWarnings("UnusedDeclaration")
-    public static Configuration getMySqlConfiguration() {
+    public Configuration getMySqlConfiguration() {
         Configuration configuration = new Configuration();
         configuration.addAnnotatedClass(User.class);
 

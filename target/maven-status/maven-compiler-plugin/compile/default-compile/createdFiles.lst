@@ -1,7 +1,12 @@
-servlets\DeleteServlete.class
-servlets\AddServlet.class
+dao\impl\UserHibernateDao.class
+service\IUserService.class
 servlets\EditServlet.class
 util\DBHelper.class
-service\UserService.class
 servlets\ListServlet.class
+dao\IUserDao.class
+factory\UserDaoFactory.class
+servlets\DeleteServlet.class
+servlets\AddServlet.class
+service\impl\UserService.class
+dao\impl\UserJdbcDao.class
 model\User.class

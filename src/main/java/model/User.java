@@ -69,7 +69,7 @@ public class User {
         return city;
     }
 
-    public void setCity(String email){
+    public void setCity(String city){
         this.city = city;
     }
 
@@ -89,7 +89,7 @@ public class User {
 
         User user = (User) o;
 
-        if (id != user.id) return false;
+        if (id != (user.id)) return false;
         if (age != user.age) return false;
         if (!Objects.equals(login, user.login)) return false;
         if (!Objects.equals(city, user.city)) return false;
