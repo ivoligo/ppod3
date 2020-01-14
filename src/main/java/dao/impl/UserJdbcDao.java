@@ -23,7 +23,7 @@ public class UserJdbcDao implements IUserDao {
         ResultSet rs = stmt.getResultSet();
         while(rs.next()){
             Long id = rs.getLong(1);
-            User user = new User(id, findUserById(id).getLogin(), findUserById(id).getAge(), findUserById(id).getCity(), findUserById(id).getPassword());
+            User user = new User(id, findUserById(id).getLogin(), findUserById(id).getAge(), findUserById(id).getCity(), findUserById(id).getRole(), findUserById(id).getPassword());
             userList.add(user);
         }
         rs.close();
@@ -37,19 +37,21 @@ public class UserJdbcDao implements IUserDao {
         int age = user.getAge();
         String city = user.getCity();
         String password = user.getPassword();
+        String role = user.getRole();
         Statement stmt = connection.createStatement();
-        stmt.executeUpdate("insert into users3(login, age, city,password) VALUES ('" +login + "', '" +age + "', '" +city + "','" +password + "')");
+        stmt.executeUpdate("insert into users3(login, age, city,password) VALUES ('" +login + "', '" +age + "', '" +city + "', , '" +role + "','" +password + "')");
         stmt.close();
     }
 
     @Override
     public void updateUser(User user) throws Exception {
-        PreparedStatement stmt = connection.prepareStatement("update users3 SET login=? , age=? , city=?, password=? where id= ?");
+        PreparedStatement stmt = connection.prepareStatement("update users3 SET login=? , age=? , city=?, role =?, password=? where id= ?");
         stmt.setString(1, user.getLogin());
         stmt.setInt(2, user.getAge());
         stmt.setString(3,user.getCity());
-        stmt.setString(4, user.getPassword());
-        stmt.setLong(5, user.getId());
+        stmt.setString(4, user.getRole());
+        stmt.setString(5, user.getPassword());
+        stmt.setLong(6, user.getId());
         stmt.executeUpdate();
         stmt.close();
     }
@@ -71,14 +73,16 @@ public class UserJdbcDao implements IUserDao {
         String login = null;
         int age = 0;
         String city = null;
+        String role = null;
         String password = null;
         while (rs.next()){
             login = rs.getString(2);
             age = rs.getInt(3);
             city = rs.getString(4);
-            password = rs.getString(5);
+            role = rs.getString(5);
+            password = rs.getString(6);
         }
-        User userById = new User(id, login, age, city, password);
+        User userById = new User(id, login, age, city, role, password);
         rs.close();
         stmt.close();
         return userById;

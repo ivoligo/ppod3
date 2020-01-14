@@ -23,6 +23,9 @@ public class User {
     @Column(name = "password")
     private String password;
 
+    @Column(name = "role")
+    private String role;
+
     public User(){
     }
 
@@ -38,6 +41,15 @@ public class User {
         this.login = login;
         this.age = age;
         this.city = city;
+        this.password = password;
+    }
+
+    public User(long id, String login, int age, String city, String role, String password) {
+        this.id = id;
+        this.login = login;
+        this.age = age;
+        this.city = city;
+        this.role = role;
         this.password = password;
     }
 
@@ -82,28 +94,12 @@ public class User {
     }
 
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        User user = (User) o;
-
-        if (id != (user.id)) return false;
-        if (age != user.age) return false;
-        if (!Objects.equals(login, user.login)) return false;
-        if (!Objects.equals(city, user.city)) return false;
-        return Objects.equals(password, user.password);
+    public String getRole() {
+        return role;
     }
 
-    @Override
-    public int hashCode() {
-        int result = (int) (id ^ (id >>> 32));
-        result = 31 * result + (login != null ? login.hashCode() : 0);
-        result = 31 * result + age;
-        result = 31 * result + (city != null ? city.hashCode() : 0);
-        result = 31 * result + (password != null ? password.hashCode() : 0);
-        return result;
+    public void setRole(String role) {
+        this.role = role;
     }
 
     @Override
@@ -114,6 +110,33 @@ public class User {
                 ", age=" + age +
                 ", city='" + city + '\'' +
                 ", password='" + password + '\'' +
+                ", role='" + role + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        User user = (User) o;
+
+        if (id != user.id) return false;
+        if (age != user.age) return false;
+        if (!Objects.equals(login, user.login)) return false;
+        if (!Objects.equals(city, user.city)) return false;
+        if (!Objects.equals(password, user.password)) return false;
+        return Objects.equals(role, user.role);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = (int) (id ^ (id >>> 32));
+        result = 31 * result + (login != null ? login.hashCode() : 0);
+        result = 31 * result + age;
+        result = 31 * result + (city != null ? city.hashCode() : 0);
+        result = 31 * result + (password != null ? password.hashCode() : 0);
+        result = 31 * result + (role != null ? role.hashCode() : 0);
+        return result;
     }
 }

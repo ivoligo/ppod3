@@ -3,6 +3,7 @@ service\IUserService.class
 servlets\EditServlet.class
 util\DBHelper.class
 servlets\ListServlet.class
+servlets\MyFilter.class
 dao\IUserDao.class
 factory\UserDaoFactory.class
 servlets\DeleteServlet.class
@@ -10,3 +11,4 @@ servlets\AddServlet.class
 service\impl\UserService.class
 dao\impl\UserJdbcDao.class
 model\User.class
+servlets\FiltersServlet.class

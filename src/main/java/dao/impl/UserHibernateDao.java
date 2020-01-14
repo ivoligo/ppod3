@@ -8,6 +8,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import util.DBHelper;
 
+import javax.management.relation.Role;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -124,6 +125,7 @@ public class UserHibernateDao implements IUserDao {
         } finally{
             session.close();
         }
+
         return user;
     }
 

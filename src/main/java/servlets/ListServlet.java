@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/list")
+@WebServlet("/admin/list")
 public class ListServlet extends HttpServlet {
 
 IUserService userService = UserService.getInstance();
@@ -29,7 +29,8 @@ IUserService userService = UserService.getInstance();
             e.printStackTrace();
         }
 
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("views/list.jsp");
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("/admin/list.jsp");
+//        RequestDispatcher requestDispatcher = req.getRequestDispatcher("admin/list.jsp");- вот так  не работает, ругается на /admin/admin/list.jsp
         requestDispatcher.forward(req, resp);
     }
 
