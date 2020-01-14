@@ -7,11 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e47ff6e-fd01-4e83-b91a-36cf081b7445" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/FiltersServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/MyFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/user/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ppod3-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ppod3-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +308,7 @@
       <workItem from="1578567662131" duration="24024000" />
       <workItem from="1578938280376" duration="1511000" />
       <workItem from="1578987258937" duration="11052000" />
-      <workItem from="1579027729076" duration="12660000" />
+      <workItem from="1579027729076" duration="16027000" />
     </task>
     <task id="LOCAL-00001" summary="fixed1">
       <created>1578569289869</created>
@@ -326,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579040171021</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed2">
+      <created>1579040730637</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579040730637</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +339,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixed1" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed1" />
+    <MESSAGE value="fixed2" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="521" y="197" key="#Assign_Data_Sources" timestamp="1578552432660">
@@ -383,11 +389,11 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1230" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1858.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1578235258215" />
-    <state x="518" y="133" key="CommitChangelistDialog2" timestamp="1579040703025">
+    <state x="518" y="133" key="CommitChangelistDialog2" timestamp="1579040729942">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="518" y="133" key="CommitChangelistDialog2/0.0.1858.1080/-1920.0.1920.1080@0.0.1858.1080" timestamp="1578569285432" />
-    <state x="518" y="133" key="CommitChangelistDialog2/0.0.1858.1080@0.0.1858.1080" timestamp="1579040703025" />
+    <state x="518" y="133" key="CommitChangelistDialog2/0.0.1858.1080@0.0.1858.1080" timestamp="1579040729942" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1578118083404">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
@@ -405,30 +411,30 @@
     </state>
     <state x="-1166" y="338" key="FileChooserDialogImpl/0.0.1858.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1578156362358" />
     <state x="730" y="338" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1578009275152" />
-    <state width="1249" height="290" key="GridCell.Tab.0.bottom" timestamp="1579040703061">
+    <state width="1249" height="290" key="GridCell.Tab.0.bottom" timestamp="1579044975819">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1292" height="290" key="GridCell.Tab.0.bottom/0.0.1858.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1578247773121" />
     <state width="1249" height="290" key="GridCell.Tab.0.bottom/0.0.1858.1080/-1920.0.1920.1080@0.0.1858.1080" timestamp="1578940275141" />
-    <state width="1249" height="290" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1579040703061" />
-    <state width="1249" height="290" key="GridCell.Tab.0.center" timestamp="1579040703061">
+    <state width="1249" height="290" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1579044975819" />
+    <state width="1249" height="290" key="GridCell.Tab.0.center" timestamp="1579044975819">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1292" height="290" key="GridCell.Tab.0.center/0.0.1858.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1578247773120" />
     <state width="1249" height="290" key="GridCell.Tab.0.center/0.0.1858.1080/-1920.0.1920.1080@0.0.1858.1080" timestamp="1578940275141" />
-    <state width="1249" height="290" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1579040703061" />
-    <state width="1249" height="290" key="GridCell.Tab.0.left" timestamp="1579040703061">
+    <state width="1249" height="290" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1579044975819" />
+    <state width="1249" height="290" key="GridCell.Tab.0.left" timestamp="1579044975819">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1292" height="290" key="GridCell.Tab.0.left/0.0.1858.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1578247773120" />
     <state width="1249" height="290" key="GridCell.Tab.0.left/0.0.1858.1080/-1920.0.1920.1080@0.0.1858.1080" timestamp="1578940275141" />
-    <state width="1249" height="290" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1579040703061" />
-    <state width="1249" height="290" key="GridCell.Tab.0.right" timestamp="1579040703061">
+    <state width="1249" height="290" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1579044975819" />
+    <state width="1249" height="290" key="GridCell.Tab.0.right" timestamp="1579044975819">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1292" height="290" key="GridCell.Tab.0.right/0.0.1858.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1578247773121" />
     <state width="1249" height="290" key="GridCell.Tab.0.right/0.0.1858.1080/-1920.0.1920.1080@0.0.1858.1080" timestamp="1578940275141" />
-    <state width="1249" height="290" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1579040703061" />
+    <state width="1249" height="290" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1579044975819" />
     <state width="1249" height="290" key="GridCell.Tab.1.bottom" timestamp="1579037536704">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -476,11 +482,11 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1828" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1858.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1578125909101" />
-    <state x="738" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579040222108">
+    <state x="738" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579044981672">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="738" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1858.1080/-1920.0.1920.1080@0.0.1858.1080" timestamp="1578569208187" />
-    <state x="738" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1858.1080@0.0.1858.1080" timestamp="1579040222108" />
+    <state x="738" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1858.1080@0.0.1858.1080" timestamp="1579044981672" />
     <state x="626" y="272" width="606" height="536" key="find.popup" timestamp="1578555059422">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
