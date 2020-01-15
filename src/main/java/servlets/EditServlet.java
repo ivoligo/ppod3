@@ -47,7 +47,7 @@ public class EditServlet extends HttpServlet {
         int age = Integer.parseInt(req.getParameter("age"));
         String city = req.getParameter("city");
         String password = req.getParameter("password");
-        String role = req.getParameter("role");
+        String role = req.getParameter("userRole");
 
         User user = new User(id, login, age, city, role, password);
         try {

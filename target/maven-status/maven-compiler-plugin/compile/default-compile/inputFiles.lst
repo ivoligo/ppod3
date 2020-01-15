@@ -6,6 +6,7 @@ C:\JMproject\ppod3\src\main\java\dao\impl\UserHibernateDao.java
 C:\JMproject\ppod3\src\main\java\service\IUserService.java
 C:\JMproject\ppod3\src\main\java\servlets\AddServlet.java
 C:\JMproject\ppod3\src\main\java\util\DBHelper.java
+C:\JMproject\ppod3\src\main\java\servlets\LogoutServlet.java
 C:\JMproject\ppod3\src\main\java\dao\IUserDao.java
 C:\JMproject\ppod3\src\main\java\dao\impl\UserJdbcDao.java
 C:\JMproject\ppod3\src\main\java\servlets\FiltersServlet.java

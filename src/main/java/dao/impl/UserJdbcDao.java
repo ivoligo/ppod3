@@ -36,10 +36,10 @@ public class UserJdbcDao implements IUserDao {
         String login = user.getLogin();
         int age = user.getAge();
         String city = user.getCity();
-        String password = user.getPassword();
         String role = user.getRole();
+        String password = user.getPassword();
         Statement stmt = connection.createStatement();
-        stmt.executeUpdate("insert into users3(login, age, city,password) VALUES ('" +login + "', '" +age + "', '" +city + "', , '" +role + "','" +password + "')");
+        stmt.executeUpdate("insert into users3(login, age, city, role, password) VALUES ('" +login + "', '" +age + "', '" +city + "',  '" +role + "','" +password + "')");
         stmt.close();
     }
 

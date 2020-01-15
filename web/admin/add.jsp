@@ -8,8 +8,12 @@
 <form method="post">
     <input required type="text" name="login" placeholder="Логин">
     <input required type="number" name="age" placeholder="Возраст">
-    <input required type="city" name="city" placeholder="Город">
-    <input required type="role" name="role" placeholder="userRole">
+    <input required type="text" name="city" placeholder="Город">
+    <select name="userRole" >
+        <option>назначь роль </option>
+        <option value="user">user</option>
+        <option value="admin">admin</option>
+    </select>
     <input required type="password" name="password" placeholder="Пароьлька">
     <input type="submit" value="Схоранить">
 </form>

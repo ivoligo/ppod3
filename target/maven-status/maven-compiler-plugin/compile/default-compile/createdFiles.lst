@@ -5,6 +5,7 @@ util\DBHelper.class
 servlets\ListServlet.class
 servlets\MyFilter.class
 dao\IUserDao.class
+servlets\LogoutServlet.class
 factory\UserDaoFactory.class
 servlets\DeleteServlet.class
 servlets\AddServlet.class

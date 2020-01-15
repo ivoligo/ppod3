@@ -4,7 +4,7 @@
 <head>
     <title>Login page</title>
     <style type="text/css">
-        input {width:100% ; border: 51px}
+        input {width:100% }
     </style>
 </head>
 <body>

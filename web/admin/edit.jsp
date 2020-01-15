@@ -17,12 +17,16 @@
     <input required type="text" name="login" value="${user.login}" placeholder="Login">
     <input required type="text" name="age" value="${user.age}" placeholder="Возраст">
     <input required type="text" name="city" value="${user.city}" placeholder="Город">
-    <input required type="text" name="role" value="${user.role}" placeholder="Роль">
+    <select name="userRole">
+        <option>назначь роль </option>
+        <option value="admin">admin</option>
+        <option value="user">user</option>
+    </select>
     <input required type="password" name="password" value="${user.password}" placeholder="Паролька">
     <input type="submit" value="Применить">
 </form>
 
-<form action="${pageContext.request.contextPath}/admin/list" >
+<form action="/admin/list" >
     <input type="submit" value="Список пользователей">
 </form>
 

@@ -29,10 +29,17 @@ public class User {
     public User(){
     }
 
-    public User(String login, int age, String city, String password) {
+//    public User(String login, int age, String city, String password) {
+//        this.login = login;
+//        this.age = age;
+//        this.city = city;
+//        this.password = password;
+//    }
+    public User(String login, int age, String city, String role, String password) {
         this.login = login;
         this.age = age;
         this.city = city;
+        this.role = role;
         this.password = password;
     }
 

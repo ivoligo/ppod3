@@ -29,10 +29,12 @@ public class AddServlet extends HttpServlet {
         String login = req.getParameter("login");
         int age = Integer.parseInt(req.getParameter("age"));
         String city = req.getParameter("city");
+        String role = req.getParameter("userRole");
         String password = req.getParameter("password");
-        String role = req.getParameter("role");
 
-        User user = new User(login, age, city, password);
+
+
+        User user = new User(login, age, city, role, password);
 
         try {
             if( ( userService.findUserByLogin(login) == null || !login.equalsIgnoreCase(userService.findUserByLogin(login).getLogin())) ){

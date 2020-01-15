@@ -47,6 +47,9 @@
 <form action = "${pageContext.request.contextPath}/admin/add">
     <input type="submit" value="Добавить пользователя">
 </form>
+<form action="/logout" method="get">
+    <input type = "submit" value="Log Out">
+</form>
 </body>
 </html>
 
